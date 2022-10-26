@@ -1,0 +1,198 @@
+/* A vous de jouer ! */
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin: 0;
+}
+
+header{
+    background: #bfdbff;
+    height: 55vh;
+    padding: 0px 250px;
+}
+
+section{
+    padding: 10px;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+}
+
+.intro svg{
+    width: 110px;
+}
+
+.navBar{
+    padding: 10px 150px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000a64;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.texte{
+    color: #000a64;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 1.4em;
+    font-family: 'Sanchez';
+    margin-right: 80px;
+}
+
+.cloudLeft1{
+    position:absolute;
+    left: 200px;
+    top: 330px;
+}
+
+.cloudLeft2{
+    position:absolute;
+    left: 390px;
+    top: 280px;
+}
+
+.cloudRight1{
+    position:absolute;
+    right:550px;
+    top:260px;
+}
+
+.cloudRight2{
+    position:absolute;
+    right:430px;
+    top:245px;
+    transform: rotateY(3.142rad);
+}
+
+.cloudRight3{
+    position: absolute;
+    right: 370px;
+    top: 100px;
+}
+
+.rocket{
+    position: absolute;
+    right:450px;
+    top:120px;
+    z-index: 1;
+}
+
+.featuresList{
+    padding-top: 30px;
+}
+
+.featuresList > div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloudLeftFeature{
+    position: absolute;
+    left: 150px;
+    bottom: 160px;
+}
+
+.cloudRightFeature{
+    position: absolute;
+    right: 245px;
+    bottom: 230px;
+}
+
+.clouds{
+    position: absolute;
+    bottom: 260px;
+    left: 290px;
+}
+
+.featuresList h2{
+    color: #ff7480;
+    font-family: 'Sanchez';
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 5px;
+    z-index: 1;
+}
+
+.features{
+    display: flex;
+    margin: 3px;
+    background-color: white;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;   
+    font-family: 'Segoe UI';
+}
+
+.features svg{
+    width: 140px;
+    height: 70px;
+}
+
+.fast, .robot, .zip{
+    /* border: solid 3px black; */
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 50px 45px;
+    z-index: 1;
+}
+
+h3{
+    font-size: 12px;
+    padding: 10px;;
+}
+
+.cloudMoveSide{
+    animation: move1 15s infinite alternate ;
+}
+
+@keyframes move1 {
+    50% {
+        right: 40%;
+        left: 40%;
+    }
+}
+
+.cloudMoveUpDown{
+    animation: move2 10s infinite alternate ;
+}
+
+@keyframes move2 {
+    50% {
+        top: 30%;
+        bottom: 30%;
+    }
+}
+
